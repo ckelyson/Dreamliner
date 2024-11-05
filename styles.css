@@ -1,0 +1,159 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Moderustic", sans-serif;
+  font-weight: 900;
+  overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+body {
+  display: block; /* Garantir que o corpo possa rolar verticalmente */
+}
+
+.section {
+  position: relative; /* Para posicionar o CTA dentro da seção */
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.cta-container-1 {
+  position: absolute;
+  top: 72%; /* Centraliza verticalmente */
+  left: 16%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centralização exata */
+  background: linear-gradient(45deg, #504b01, #FFD700);
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  padding: -10px 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 5cqb;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.hh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
+ color: #192542;
+}
+
+
+
+
+/* Imagens de fundo para mobile */
+@media only screen and (max-width: 768px) {
+  .image-container img {
+      content: url('./images/MOBILE/PÁG-1-MOBILE.webp');
+  }
+  .cta-container-1 {
+    position: absolute;
+    top: 92%; /* Centraliza verticalmente */
+    left: 34%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralização exata */
+    background: linear-gradient(45deg, #504b01, #FFD700);
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    padding: -9px 1px;
+  }
+  .cta {
+    display: inline-block;
+    padding: 6px 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .hh {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #192542;
+    text-align: center;
+  }
+
+  .section:nth-of-type(2) .image-container img {
+      content: url('images/MOBILE/PÁG-2-MOBILE.webp');
+  }
+  .section:nth-of-type(3) .image-container img {
+      content: url('./images/MOBILE/PÁG-3-MOBILE.webp');
+  }
+  .section:nth-of-type(4) .image-container img {
+      content: url('./images/MOBILE/PÁG-4-MOBILE.webp');
+  }
+  .section:nth-of-type(5) .image-container img {
+      content: url('caminho/para/imagem-mobile-5.webp');
+  }
+}
+
+/* Imagens de fundo para tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .image-container img {
+      content: url('./images/TABLET/PÁG\ 1\ -\ TABLET.webp');
+  }
+  .cta-container-1 {
+    position: absolute;
+    top: 85%; /* Ajuste conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralização exata */
+    background: linear-gradient(45deg, #504b01, #FFD700);
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+  }
+  .cta {
+    display: inline-block;
+    padding: 8px 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .hh {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #192542;
+    text-align: center;
+  }
+  .section:nth-of-type(2) .image-container img {
+      content: url('images/TABLET/PÁG-2-TABLET.webp');
+  }
+  .section:nth-of-type(3) .image-container img {
+      content: url('./images/TABLET/PÁG-3-TABLET.webp');
+  }
+  .section:nth-of-type(4) .image-container img {
+      content: url('./images/TABLET/PÁG-4-TABLET.webp');
+  }
+  .section:nth-of-type(5) .image-container img {
+      content: url('caminho/para/imagem-tablet-5.webp');
+  }
+}
+
