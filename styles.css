@@ -5,6 +5,12 @@ html, body {
   font-family: "Moderustic", sans-serif;
   font-weight: 900;
   overflow-x: hidden; /* Para evitar rolagem horizontal */
+  background: #ffffff;
+}
+
+.cad {
+  background: #e0e8de
+  ;
 }
 
 body {
@@ -46,6 +52,10 @@ body {
   transition: background-color 0.3s;
 }
 
+span {
+  text-align: center;
+}
+
 .cta:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -60,8 +70,22 @@ body {
  color: #192542;
 }
 
+.faq-container { 
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px; 
+  border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
 
-
+.ss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.faq-item { margin-bottom: 20px; } .faq-question { background: #007bff; color: #fff; padding: 15px; cursor: pointer; border-radius: 5px; display: flex; align-items: center; } .faq-question h3 { flex-grow: 1; margin: 0; padding-left: 10px; } .faq-answer { display: none; padding: 15px; border: 1px solid #007bff; border-top: none; border-radius: 0 0 5px 5px; background: #e9ecef; } .toggle-symbol { font-size: 24px; font-weight: bold;}
 
 /* Imagens de fundo para mobile */
 @media only screen and (max-width: 768px) {
@@ -109,6 +133,9 @@ body {
   .section:nth-of-type(5) .image-container img {
       content: url('caminho/para/imagem-mobile-5.webp');
   }
+  .section:nth-of-type(5) .image-container img {
+    content: url('caminho/para/imagem-mobile-5.webp');
+}
 }
 
 /* Imagens de fundo para tablet */
